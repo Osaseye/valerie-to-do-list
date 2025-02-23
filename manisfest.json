@@ -1,0 +1,22 @@
+{
+    "name": "Valerie's Task List",
+    "short_name": "Val Tasks",
+    "description": "A feminine task manager for Valerie",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#fff1f2",
+    "theme_color": "#db2777",
+    "icons": [
+      {
+        "src": "https://api.dicebear.com/7.x/shapes/svg?seed=ValerieTasks&backgroundColor=pink",
+        "sizes": "192x192",
+        "type": "image/svg+xml"
+      },
+      {
+        "src": "https://api.dicebear.com/7.x/shapes/svg?seed=ValerieTasks&backgroundColor=pink",
+        "sizes": "512x512",
+        "type": "image/svg+xml"
+      }
+    ]
+  }
+  

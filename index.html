@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#ff9ecd" />
+        <title>Valerie's Task List</title>
+        <link rel="stylesheet" href="/styles.css" />
+        <link rel="manifest" href="/manifest.json" />
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <div id="theme-selector" class="theme-selector">
+                <button class="theme-btn" data-theme="spring">🌸</button>
+                <button class="theme-btn" data-theme="summer">🌺</button>
+                <button class="theme-btn" data-theme="autumn">🍁</button>
+                <button class="theme-btn" data-theme="winter">❄️</button>
+            </div>
+
+            <div id="mascot-customizer" class="mascot-customizer">
+                <select id="mascot-type">
+                    <option value="cat">Cute Cat</option>
+                    <option value="bunny">Sweet Bunny</option>
+                    <option value="bear">Lovely Bear</option>
+                </select>
+                <div class="color-picker">
+                    <input type="color" id="mascot-color" value="#FFB7E0" />
+                </div>
+            </div>
+
+            <header>
+                <h1>✨ Valerie's Tasks ✨</h1>
+                <p class="subtitle">Making every moment count 💖</p>
+                <div id="achievements" class="achievements">
+                    <div class="achievement-list"></div>
+                </div>
+            </header>
+
+            <form id="task-form" class="task-form">
+                <div class="input-group">
+                    <input type="text" id="task-input" placeholder="Add tasks babe" required />
+                    <input type="datetime-local" id="task-time" required />
+                    <select id="task-category" required>
+                        <option value="">Select Category</option>
+                        <option value="work">💼 Work</option>
+                        <option value="personal">💝 Personal</option>
+                        <option value="shopping">🛍️ Shopping</option>
+                        <option value="health">💪 Health</option>
+                        <option value="study">📚 Study</option>
+                    </select>
+                </div>
+                <button type="submit" class="add-btn">
+                    <span>Add Task</span>
+                    <div class="button-sparkles"></div>
+                </button>
+            </form>
+
+            <div id="tasks-container"></div>
+
+            <div id="celebration-modal" class="modal">
+                <div class="modal-content">
+                    <h2>Come and collect money from my account na!!</h2>
+                    <p id="celebration-text"></p>
+                    <div class="achievement-earned hidden">
+                    </div>
+                    <div class="sparkles"></div>
+                    <div id="mascot-celebration"></div>
+                </div>
+            </div>
+
+            <div id="mascot-container" class="mascot-container"></div>
+        </div>
+
+        <div id="progress-tracker" class="progress-tracker">
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+            <p class="progress-text"></p>
+        </div>
+
+        <script src="/script.js"></script>
+    </body>
+</html>
